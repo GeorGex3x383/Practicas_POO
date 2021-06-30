@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jJR_gGWqEeu3TNdHCgsGvQ" name="CasosDeUso">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_jhENYGWqEeu3TNdHCgsGvQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_4DBZEGWrEeu3TNdHCgsGvQ" name="Profesor"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_AiKvoGWsEeu3TNdHCgsGvQ" name="Universidad en línea">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sCMPAGWsEeu3TNdHCgsGvQ" name="Resolver el examen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_27SfgGWsEeu3TNdHCgsGvQ" name="Enviar respuestas y procedimientos"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EocMAGWtEeu3TNdHCgsGvQ" name="Revisar examen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LhGF4GWtEeu3TNdHCgsGvQ" name="Calificar examen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PkMu8GWtEeu3TNdHCgsGvQ" name="Guardar calificaciones"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SmrBcGWtEeu3TNdHCgsGvQ" name="Consultar resultados"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EzaQcGWuEeu3TNdHCgsGvQ" name="Aplicar el examen"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_a925YGWuEeu3TNdHCgsGvQ" name="Almacenar datos"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_t83zAGWsEeu3TNdHCgsGvQ" name="Estudiante"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vgF5QGWsEeu3TNdHCgsGvQ" memberEnd="_vge60GWsEeu3TNdHCgsGvQ _vggI8GWsEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vgdssGWsEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vgdssWWsEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vge60GWsEeu3TNdHCgsGvQ" name="resolver el examen" type="_sCMPAGWsEeu3TNdHCgsGvQ" association="_vgF5QGWsEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vggI8GWsEeu3TNdHCgsGvQ" name="estudiante" type="_t83zAGWsEeu3TNdHCgsGvQ" association="_vgF5QGWsEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5cl-oGWsEeu3TNdHCgsGvQ" memberEnd="_5cmlsmWsEeu3TNdHCgsGvQ _5cmls2WsEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5cmlsGWsEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5cmlsWWsEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5cmlsmWsEeu3TNdHCgsGvQ" name="enviar respuestas y procedimientos" type="_27SfgGWsEeu3TNdHCgsGvQ" association="_5cl-oGWsEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5cmls2WsEeu3TNdHCgsGvQ" name="estudiante" type="_t83zAGWsEeu3TNdHCgsGvQ" association="_5cl-oGWsEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GUk9sGWtEeu3TNdHCgsGvQ" memberEnd="_GUlkwGWtEeu3TNdHCgsGvQ _GUlkwWWtEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GUk9sWWtEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GUk9smWtEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GUlkwGWtEeu3TNdHCgsGvQ" name="revisar examen" type="_EocMAGWtEeu3TNdHCgsGvQ" association="_GUk9sGWtEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GUlkwWWtEeu3TNdHCgsGvQ" name="profesor" type="_4DBZEGWrEeu3TNdHCgsGvQ" association="_GUk9sGWtEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Njk7AGWtEeu3TNdHCgsGvQ" memberEnd="_NjmJIGWtEeu3TNdHCgsGvQ _NjmJIWWtEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NjliEGWtEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NjliEWWtEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NjmJIGWtEeu3TNdHCgsGvQ" name="calificar examen" type="_LhGF4GWtEeu3TNdHCgsGvQ" association="_Njk7AGWtEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NjmJIWWtEeu3TNdHCgsGvQ" name="profesor" type="_4DBZEGWrEeu3TNdHCgsGvQ" association="_Njk7AGWtEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RkZFEGWtEeu3TNdHCgsGvQ" memberEnd="_RkZsImWtEeu3TNdHCgsGvQ _RkaTMGWtEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RkZsIGWtEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RkZsIWWtEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RkZsImWtEeu3TNdHCgsGvQ" name="guardar calificaciones" type="_PkMu8GWtEeu3TNdHCgsGvQ" association="_RkZFEGWtEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RkaTMGWtEeu3TNdHCgsGvQ" name="profesor" type="_4DBZEGWrEeu3TNdHCgsGvQ" association="_RkZFEGWtEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XxSsMGWtEeu3TNdHCgsGvQ" memberEnd="_XxTTQGWtEeu3TNdHCgsGvQ _XxTTQWWtEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XxSsMWWtEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XxSsMmWtEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XxTTQGWtEeu3TNdHCgsGvQ" name="consultar resultados" type="_SmrBcGWtEeu3TNdHCgsGvQ" association="_XxSsMGWtEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XxTTQWWtEeu3TNdHCgsGvQ" name="estudiante" type="_t83zAGWsEeu3TNdHCgsGvQ" association="_XxSsMGWtEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HVUzkGWuEeu3TNdHCgsGvQ" memberEnd="_HVUzk2WuEeu3TNdHCgsGvQ _HVVaoGWuEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HVUzkWWuEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HVUzkmWuEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HVUzk2WuEeu3TNdHCgsGvQ" name="aplicar el examen" type="_EzaQcGWuEeu3TNdHCgsGvQ" association="_HVUzkGWuEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HVVaoGWuEeu3TNdHCgsGvQ" name="profesor" type="_4DBZEGWrEeu3TNdHCgsGvQ" association="_HVUzkGWuEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_IRCN4GWuEeu3TNdHCgsGvQ" name="Servidor"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VeXK0GWuEeu3TNdHCgsGvQ" memberEnd="_VeXx4GWuEeu3TNdHCgsGvQ _VeXx4WWuEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VeXK0WWuEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VeXK0mWuEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VeXx4GWuEeu3TNdHCgsGvQ" name="guardar calificaciones" type="_PkMu8GWtEeu3TNdHCgsGvQ" association="_VeXK0GWuEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VeXx4WWuEeu3TNdHCgsGvQ" name="servidor" type="_IRCN4GWuEeu3TNdHCgsGvQ" association="_VeXK0GWuEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W4zIgGWuEeu3TNdHCgsGvQ" memberEnd="_W4zvkmWuEeu3TNdHCgsGvQ _W4zvk2WuEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W4zvkGWuEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_W4zvkWWuEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W4zvkmWuEeu3TNdHCgsGvQ" name="revisar examen" type="_EocMAGWtEeu3TNdHCgsGvQ" association="_W4zIgGWuEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W4zvk2WuEeu3TNdHCgsGvQ" type="_IRCN4GWuEeu3TNdHCgsGvQ" association="_W4zIgGWuEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_c3NAoGWuEeu3TNdHCgsGvQ" memberEnd="_c3NnsmWuEeu3TNdHCgsGvQ _c3Nns2WuEeu3TNdHCgsGvQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c3NnsGWuEeu3TNdHCgsGvQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c3NnsWWuEeu3TNdHCgsGvQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_c3NnsmWuEeu3TNdHCgsGvQ" name="almacenar datos" type="_a925YGWuEeu3TNdHCgsGvQ" association="_c3NAoGWuEeu3TNdHCgsGvQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_c3Nns2WuEeu3TNdHCgsGvQ" name="servidor" type="_IRCN4GWuEeu3TNdHCgsGvQ" association="_c3NAoGWuEeu3TNdHCgsGvQ"/>
+  </packagedElement>
+</uml:Model>

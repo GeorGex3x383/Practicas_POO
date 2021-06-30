@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ktO2MKzSEeu4qr4wCM7AfA" name="src">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_lBTBsKzSEeu4qr4wCM7AfA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_xNow0KzUEeu4qr4wCM7AfA" name="Usuario"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_2I04cKzUEeu4qr4wCM7AfA" name="Interfaz Grafica">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9RIX4KzUEeu4qr4wCM7AfA" name="ObservarGraficaConDatos"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GlEocKzVEeu4qr4wCM7AfA" name="LectorDeArchivos">
+      <generalization xmi:type="uml:Generalization" xmi:id="_NGXyoK0fEeup__jSsbkQhg" general="_MplvoKzVEeu4qr4wCM7AfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MplvoKzVEeu4qr4wCM7AfA" name="LimpiarArchivos"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_StbhYKzVEeu4qr4wCM7AfA" name="ObtenerDatos">
+      <generalization xmi:type="uml:Generalization" xmi:id="_V-AhsK0fEeup__jSsbkQhg" general="_W84kYKzVEeu4qr4wCM7AfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_W84kYKzVEeu4qr4wCM7AfA" name="GenerarGraficas">
+      <generalization xmi:type="uml:Generalization" xmi:id="_RaM0wK0eEeup__jSsbkQhg" general="_9RIX4KzUEeu4qr4wCM7AfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zyUUcK0eEeup__jSsbkQhg" name="OprimirBotones">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3eymMK0eEeup__jSsbkQhg" general="_9RIX4KzUEeu4qr4wCM7AfA"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_D4ft0K0fEeup__jSsbkQhg" general="_GlEocKzVEeu4qr4wCM7AfA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KP04wK0eEeup__jSsbkQhg" name="ControladorDeDatos"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xalyoK0fEeup__jSsbkQhg" memberEnd="_xasgUK0fEeup__jSsbkQhg _xau8kK0fEeup__jSsbkQhg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xar5QK0fEeup__jSsbkQhg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xar5Qa0fEeup__jSsbkQhg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xasgUK0fEeup__jSsbkQhg" name="oprimirbotones" type="_zyUUcK0eEeup__jSsbkQhg" association="_xalyoK0fEeup__jSsbkQhg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xau8kK0fEeup__jSsbkQhg" name="usuario" type="_xNow0KzUEeu4qr4wCM7AfA" association="_xalyoK0fEeup__jSsbkQhg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zCRiIK0fEeup__jSsbkQhg" memberEnd="_zCSJMq0fEeup__jSsbkQhg _zCSJM60fEeup__jSsbkQhg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zCSJMK0fEeup__jSsbkQhg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zCSJMa0fEeup__jSsbkQhg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zCSJMq0fEeup__jSsbkQhg" name="lectordearchivos" type="_GlEocKzVEeu4qr4wCM7AfA" association="_zCRiIK0fEeup__jSsbkQhg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zCSJM60fEeup__jSsbkQhg" name="controladordedatos" type="_KP04wK0eEeup__jSsbkQhg" association="_zCRiIK0fEeup__jSsbkQhg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0DcEMK0fEeup__jSsbkQhg" memberEnd="_0DcrQa0fEeup__jSsbkQhg _0DcrQq0fEeup__jSsbkQhg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0DcEMa0fEeup__jSsbkQhg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0DcrQK0fEeup__jSsbkQhg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0DcrQa0fEeup__jSsbkQhg" name="obtenerdatos" type="_StbhYKzVEeu4qr4wCM7AfA" association="_0DcEMK0fEeup__jSsbkQhg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0DcrQq0fEeup__jSsbkQhg" name="controladordedatos" type="_KP04wK0eEeup__jSsbkQhg" association="_0DcEMK0fEeup__jSsbkQhg"/>
+  </packagedElement>
+</uml:Model>

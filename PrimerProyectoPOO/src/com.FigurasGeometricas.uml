@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_x6c_cGspEeu7rc-PowFlRg" name="com">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_LP5A4GsuEeu7rc-PowFlRg">
+    <body>figuraUno Cubo&#xD;
+nombre-Cubo&#xD;
+lado = 3&#xD;
+calcularArea()= 9&#xD;
+calcularVolumen() = 27</body>
+  </ownedComment>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_x7-CYGspEeu7rc-PowFlRg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zgLAEGspEeu7rc-PowFlRg" name="FigurasGeometricas">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1pHpkGspEeu7rc-PowFlRg" name="nombre" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G-bIgGsqEeu7rc-PowFlRg" name="FigurasGeometricas" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NCu0UGsqEeu7rc-PowFlRg" name="nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_EMbskGsrEeu7rc-PowFlRg" name="salida" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_X874EGsqEeu7rc-PowFlRg" name="getNombre">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_V4CoIGsqEeu7rc-PowFlRg" name="yes"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0zcwYGsqEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1_1rAGsqEeu7rc-PowFlRg" name="calculaArea">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BT0gsGsrEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FrymgGsrEeu7rc-PowFlRg" name="calculaVolumen">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LY9ksGsrEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NkQ-oGsrEeu7rc-PowFlRg" name="Cubo">
+    <generalization xmi:type="uml:Generalization" xmi:id="_gNKMYGsrEeu7rc-PowFlRg" general="_zgLAEGspEeu7rc-PowFlRg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_h_dQcGsrEeu7rc-PowFlRg" name="lado" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uK1oMGsrEeu7rc-PowFlRg" name="Cubo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zP-9EGsrEeu7rc-PowFlRg" name="nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4FUUUGsrEeu7rc-PowFlRg" name="lado">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__5VqQGsrEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AxXecGssEeu7rc-PowFlRg" name="calculaArea">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_G4w6gGssEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N2PC8GssEeu7rc-PowFlRg" name="calculaVolumen">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RZHT0GssEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UtOI4GssEeu7rc-PowFlRg" name="Cilindro">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ad-mkGssEeu7rc-PowFlRg" general="_zgLAEGspEeu7rc-PowFlRg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEhT4GssEeu7rc-PowFlRg" name="altura" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mzqw4GssEeu7rc-PowFlRg" name="radio" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rE8Y0GssEeu7rc-PowFlRg" name="areaAltura" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vma_8GssEeu7rc-PowFlRg" name="areaBase" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zKrw4GssEeu7rc-PowFlRg" name="Cilindro">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7CZUAGssEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_9TLD0GssEeu7rc-PowFlRg" name="nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__Q3fkGssEeu7rc-PowFlRg" name="radio">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BSO6YGstEeu7rc-PowFlRg" name="altura">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_EZeYIGstEeu7rc-PowFlRg" name="areaAltura">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_F-z-QGstEeu7rc-PowFlRg" name="areaBase">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_M2qm4GstEeu7rc-PowFlRg" name="calcularArea">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QLo-oGstEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RS46kGstEeu7rc-PowFlRg" name="calcularVolumen">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VPhvQGstEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XRx64GstEeu7rc-PowFlRg" name="Paralelepipedo">
+    <generalization xmi:type="uml:Generalization" xmi:id="_uhBBoGstEeu7rc-PowFlRg" general="_zgLAEGspEeu7rc-PowFlRg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fVQpIGstEeu7rc-PowFlRg" name="lado1" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mtgCAGstEeu7rc-PowFlRg" name="lado2" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qDaN4GstEeu7rc-PowFlRg" name="lado3" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wCliEGstEeu7rc-PowFlRg" name="Paralelepipedo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0O-C8GstEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3Sal0GstEeu7rc-PowFlRg" name="nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_44J0kGstEeu7rc-PowFlRg" name="lado1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6YDhEGstEeu7rc-PowFlRg" name="lado2">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WzswGstEeu7rc-PowFlRg" name="lado3">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__Po7EGstEeu7rc-PowFlRg" name="calcularArea">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DfJBYGsuEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ExCuIGsuEeu7rc-PowFlRg" name="calcularVolumen">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JCWLQGsuEeu7rc-PowFlRg" name="salida" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_-EK0EGy6EeuyHJ3pvpxhdA" name="com">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_-JPhUGy6EeuyHJ3pvpxhdA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="__gBuEGy6EeuyHJ3pvpxhdA" name="Estudiante"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BB5wgGy7EeuyHJ3pvpxhdA" name="Exámenes">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2V_K8Gy7EeuyHJ3pvpxhdA" name="Registrar materia"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_AsMw0Gy8EeuyHJ3pvpxhdA" name="Conectar"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GjLyUGy8EeuyHJ3pvpxhdA" name="Indicar si hay espacio disponible"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DZq5IGy7EeuyHJ3pvpxhdA" name="Sistema Administración"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GZguYGy7EeuyHJ3pvpxhdA" name="SMBD"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7UAkIGy7EeuyHJ3pvpxhdA" memberEnd="_7UCZUGy7EeuyHJ3pvpxhdA _7UCZUWy7EeuyHJ3pvpxhdA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7UBLMGy7EeuyHJ3pvpxhdA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7UByQGy7EeuyHJ3pvpxhdA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7UCZUGy7EeuyHJ3pvpxhdA" name="registrar materia" type="_2V_K8Gy7EeuyHJ3pvpxhdA" association="_7UAkIGy7EeuyHJ3pvpxhdA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7UCZUWy7EeuyHJ3pvpxhdA" name="estudiante" type="__gBuEGy6EeuyHJ3pvpxhdA" association="_7UAkIGy7EeuyHJ3pvpxhdA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-L2T8Gy7EeuyHJ3pvpxhdA" memberEnd="_-L3iEWy7EeuyHJ3pvpxhdA _-L4JIGy7EeuyHJ3pvpxhdA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-L27AGy7EeuyHJ3pvpxhdA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-L3iEGy7EeuyHJ3pvpxhdA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-L3iEWy7EeuyHJ3pvpxhdA" name="registrar materia" type="_2V_K8Gy7EeuyHJ3pvpxhdA" association="_-L2T8Gy7EeuyHJ3pvpxhdA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-L4JIGy7EeuyHJ3pvpxhdA" name="sistema administración" type="_DZq5IGy7EeuyHJ3pvpxhdA" association="_-L2T8Gy7EeuyHJ3pvpxhdA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ds9zIGy8EeuyHJ3pvpxhdA" memberEnd="_Ds-aMWy8EeuyHJ3pvpxhdA _Ds-aMmy8EeuyHJ3pvpxhdA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ds9zIWy8EeuyHJ3pvpxhdA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ds-aMGy8EeuyHJ3pvpxhdA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ds-aMWy8EeuyHJ3pvpxhdA" name="conectar" type="_AsMw0Gy8EeuyHJ3pvpxhdA" association="_Ds9zIGy8EeuyHJ3pvpxhdA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ds-aMmy8EeuyHJ3pvpxhdA" name="sistema administración" type="_DZq5IGy7EeuyHJ3pvpxhdA" association="_Ds9zIGy8EeuyHJ3pvpxhdA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JmNecGy8EeuyHJ3pvpxhdA" memberEnd="_JmOskmy8EeuyHJ3pvpxhdA _JmPToGy8EeuyHJ3pvpxhdA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JmOskGy8EeuyHJ3pvpxhdA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JmOskWy8EeuyHJ3pvpxhdA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JmOskmy8EeuyHJ3pvpxhdA" name="indicar si hay espacio disponible" type="_GjLyUGy8EeuyHJ3pvpxhdA" association="_JmNecGy8EeuyHJ3pvpxhdA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JmPToGy8EeuyHJ3pvpxhdA" name="smbd" type="_GZguYGy7EeuyHJ3pvpxhdA" association="_JmNecGy8EeuyHJ3pvpxhdA"/>
+  </packagedElement>
+</uml:Model>
